@@ -65,6 +65,59 @@ section{max-width:1200px;margin:0 auto;padding:80px 24px}
 .visit-info button{width:100%;background:#0f3d2e;color:#fff;padding:14px;border-radius:12px;border:0;margin-top:12px;font-weight:600;cursor:pointer}
 .whatsapp-float{position:fixed;bottom:24px;right:24px;background:#25D366;width:56px;height:56px;border-radius:100px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px;box-shadow:0 10px 30px rgba(0,0,0,0.2);z-index:99}
 footer{background:#0a2e22;color:rgba(255,255,255,0.5);text-align:center;padding:30px;font-size:13px}
+.books-section{max-width:none;background:#f7f4ec}
+.books-wrap{max-width:1200px;margin:0 auto}
+.books-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid #ded9cc;padding-bottom:28px}
+.books-kicker{color:#8b7429;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700}
+.books-heading h2{color:#0f3d2e;font-size:clamp(32px,4vw,48px);line-height:1.12;margin-top:10px}
+.books-heading p{max-width:550px;color:#68675f;margin-top:14px}
+.books-admin-trigger{flex:none;border:1px solid #0f3d2e;background:transparent;color:#0f3d2e;padding:12px 18px;font:600 13px Inter,sans-serif;cursor:pointer}
+.book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:36px}
+.book-card{min-width:0;background:#fff;border:1px solid #e8e4da;box-shadow:0 8px 26px rgba(30,40,28,.045);transition:transform .2s ease,box-shadow .2s ease}
+.book-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(30,40,28,.12)}
+.book-cover{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;background:#e8e1cf}
+.book-card-body{padding:18px}
+.book-meta{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.book-category{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#82734c;font-weight:700}
+.book-status{font-size:10px;font-weight:700;color:#285d3e}
+.book-status[data-status="Coming Soon"]{color:#8b6817}
+.book-status[data-status="Unavailable"]{color:#8b4242}
+.book-card h3{font-size:20px;line-height:1.22;color:#183a2c;margin-top:12px}
+.book-card p{color:#6b6b64;font-size:13px;line-height:1.65;margin-top:9px;min-height:64px}
+.book-card-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #efede7;margin-top:16px;padding-top:14px}
+.book-price{font-size:12px;color:#474940;font-weight:600}
+.book-details-trigger{border:0;background:none;color:#0f3d2e;text-decoration:underline;text-underline-offset:4px;font:700 12px Inter,sans-serif;cursor:pointer;padding:7px 0}
+.book-empty{grid-column:1/-1;text-align:center;padding:48px 20px;color:#666}
+dialog.book-dialog{width:min(760px,calc(100% - 32px));max-height:calc(100% - 32px);border:0;padding:0;background:#fdfbf7;color:#1a2e22;box-shadow:0 24px 90px rgba(0,0,0,.3)}
+dialog.book-dialog::backdrop{background:rgba(10,30,22,.68);backdrop-filter:blur(3px)}
+.dialog-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid #e8e4da}
+.dialog-top strong{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#746c54}
+.dialog-close{width:38px;height:38px;border:1px solid #dcd8ce;background:transparent;font-size:22px;line-height:1;cursor:pointer;color:#193b2e}
+.book-detail-layout{display:grid;grid-template-columns:minmax(180px,.72fr) 1.28fr;gap:30px;padding:28px}
+.book-detail-layout img{width:100%;aspect-ratio:3/4;object-fit:cover;box-shadow:0 14px 28px rgba(0,0,0,.16)}
+.book-detail-copy{align-self:center}
+.book-detail-copy h2{font-size:clamp(26px,4vw,38px);line-height:1.12;color:#0f3d2e;margin:12px 0}
+.book-detail-copy p{color:#5d6059;font-size:14px;line-height:1.8;white-space:pre-line}
+.book-detail-info{font-size:12px;color:#77766f;margin-top:16px}
+.book-enquiry{display:inline-block;background:#0f3d2e;color:white;padding:13px 18px;font-size:13px;font-weight:700;margin-top:22px}
+.admin-dialog{width:min(820px,calc(100% - 24px))!important}
+.admin-warning{margin:18px 22px 0;padding:13px 15px;border-left:3px solid #c09b37;background:#f5efd9;color:#665728;font-size:12px;line-height:1.6}
+.admin-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:22px}
+.admin-list h3,.admin-form h3{font-size:19px;color:#0f3d2e;margin-bottom:12px}
+.admin-book-row{border-top:1px solid #e7e2d7;padding:12px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.admin-book-row strong{display:block;font:600 13px Inter,sans-serif}
+.admin-book-row small{color:#777;font-size:11px}
+.admin-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.admin-actions button,.admin-secondary{background:transparent;border:1px solid #d9d4c8;padding:7px 9px;color:#234635;font:600 11px Inter,sans-serif;cursor:pointer}
+.admin-actions .delete-book{color:#923e39}
+.admin-form label{display:block;color:#43463f;font-size:11px;font-weight:700;margin:10px 0 5px}
+.admin-form input,.admin-form textarea,.admin-form select{width:100%;padding:10px 11px;border:1px solid #dcd8ce;border-radius:0;background:#fff;font:13px Inter,sans-serif;color:#1a2e22}
+.admin-form textarea{min-height:84px;resize:vertical}
+.admin-form button[type="submit"]{margin-top:14px;background:#0f3d2e;border:0;color:#fff;padding:12px 16px;font:600 13px Inter,sans-serif;cursor:pointer}
+.admin-form .admin-secondary{margin-top:14px}
+.admin-note{font-size:11px;color:#888;margin-top:10px;line-height:1.5}
+@media(max-width:900px){.book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.books-heading{align-items:flex-start;flex-direction:column}.admin-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.book-grid{gap:14px}.book-card-body{padding:13px}.book-card h3{font-size:17px}.book-card p{font-size:12px;min-height:0}.book-meta{align-items:flex-start;flex-direction:column;gap:4px}.book-detail-layout{grid-template-columns:1fr;gap:18px;padding:20px}.book-detail-layout img{max-width:210px;margin:auto}.admin-layout{padding:16px}.admin-book-row{align-items:flex-start;flex-direction:column}.admin-actions{justify-content:flex-start}}
 @media(max-width:900px){
 .nav{display:none}
 .about{grid-template-columns:1fr}
@@ -84,6 +137,7 @@ footer{background:#0a2e22;color:rgba(255,255,255,0.5);text-align:center;padding:
     <a href="#service-times">Service Times</a>
     <a href="#events">Events</a>
     <a href="#sermons">Sermons</a>
+    <a href="#books">Books</a>
     <a href="#gallery">Gallery</a>
     <a href="#visit">Visit</a>
   </nav>
@@ -163,6 +217,20 @@ footer{background:#0a2e22;color:rgba(255,255,255,0.5);text-align:center;padding:
   <div style="text-align:center;margin-top:24px"><a href="https://wa.me/2347067901170" style="background:#0f3d2e;color:#fff;padding:12px 24px;border-radius:100px;font-weight:600;font-size:14px">Request Sermons on WhatsApp</a></div>
 </section>
 
+<section id="books" class="books-section" aria-labelledby="books-title">
+  <div class="books-wrap">
+    <div class="books-heading">
+      <div>
+        <span class="books-kicker">The ministry library</span>
+        <h2 id="books-title">Books by Bishop Maji</h2>
+        <p>Explore inspiring books by Bishop Maji, written to encourage spiritual growth, strengthen faith, develop leadership and inspire purposeful living.</p>
+      </div>
+      <button class="books-admin-trigger" id="open-book-admin" type="button">Manage books · Demo</button>
+    </div>
+    <div class="book-grid" id="book-grid" aria-live="polite"></div>
+  </div>
+</section>
+
 <!-- GALLERY - FROM YOUR TABLE -->
 <section id="gallery">
   <h2 style="font-size:42px;color:#0f3d2e;text-align:center">Gallery</h2>
@@ -211,13 +279,123 @@ footer{background:#0a2e22;color:rgba(255,255,255,0.5);text-align:center;padding:
   </div>
 </section>
 
+<dialog class="book-dialog" id="book-detail-dialog" aria-labelledby="book-detail-title">
+  <div class="dialog-top"><strong>From the ministry library</strong><button class="dialog-close" type="button" data-close-dialog aria-label="Close book details">×</button></div>
+  <div class="book-detail-layout" id="book-detail-content"></div>
+</dialog>
+
+<dialog class="book-dialog admin-dialog" id="book-admin-dialog" aria-labelledby="book-admin-title">
+  <div class="dialog-top"><strong id="book-admin-title">Book management · Demo</strong><button class="dialog-close" type="button" data-close-dialog aria-label="Close book management">×</button></div>
+  <p class="admin-warning">Demo only: changes are stored in this browser and are not secured or shared with the church. This is not an authenticated admin system. Production requires a protected CMS and server-side authorization.</p>
+  <div class="admin-layout">
+    <div class="admin-list"><h3>Catalogue</h3><div id="admin-book-list"></div></div>
+    <form class="admin-form" id="book-admin-form">
+      <h3 id="book-form-heading">Add a book</h3>
+      <input type="hidden" name="bookId">
+      <label for="book-title">Book title</label><input id="book-title" name="title" required maxlength="100">
+      <label for="book-description">Description</label><textarea id="book-description" name="description" required maxlength="1200"></textarea>
+      <label for="book-category">Category</label><select id="book-category" name="category" required><option value="Faith & Spiritual Growth">Faith & Spiritual Growth</option><option value="Purpose & Personal Growth">Purpose & Personal Growth</option><option value="Leadership">Leadership</option><option value="Bible Study">Bible Study</option><option value="Other">Other</option></select>
+      <label for="book-price">Price (optional)</label><input id="book-price" name="price" type="text" maxlength="40" placeholder="Leave blank if not provided">
+      <label for="book-publication">Publication information (optional)</label><input id="book-publication" name="publication" maxlength="160" placeholder="No invented dates or ISBNs">
+      <label for="book-status">Availability</label><select id="book-status" name="status" required><option>Available</option><option>Coming Soon</option><option>Unavailable</option><option>Draft</option><option>Unpublished</option></select>
+      <label for="book-cover">Cover image (optional upload)</label><input id="book-cover" name="cover" type="file" accept="image/*">
+      <label for="book-enquiry">Enquiry link</label><input id="book-enquiry" name="enquiryLink" type="url" placeholder="https://wa.me/2347067901170">
+      <button type="submit">Save book</button><button class="admin-secondary" type="button" id="cancel-book-edit" hidden>Cancel edit</button>
+      <p class="admin-note">Sample titles and descriptions are fictional placeholders. Uploaded demo covers are kept only in this browser.</p>
+    </form>
+  </div>
+</dialog>
+
 <footer>© 2026 Springs of Life Resource Centre Inc — East CBN Junction, Karu, Abuja • 5.0 ★ on Google • V1 Features Included • V2: Admin, Giving, Sermon Management coming soon</footer>
 <a class="whatsapp-float" href="https://wa.me/2347067901170">W</a>
 
 <script>
-document.querySelector('form').addEventListener('submit',()=>{
+const demoBooks = [
+  {id:'faith',title:'The Power of Faith',description:'A fictional demonstration title for reflections on building faith, trusting God through uncertainty and living with spiritual confidence.',category:'Faith & Spiritual Growth',status:'Available',coverColors:['#23483b','#d5ba68'],coverMark:'FAITH'},
+  {id:'purpose',title:'Walking in Divine Purpose',description:'A fictional demonstration title about discovering a meaningful direction and taking faithful steps toward purposeful living.',category:'Purpose & Personal Growth',status:'Coming Soon',coverColors:['#563b31','#d2a877'],coverMark:'PURPOSE'},
+  {id:'leadership',title:'Principles of Spiritual Leadership',description:'A fictional demonstration title exploring service, integrity and the responsibilities of spiritual leadership.',category:'Leadership',status:'Available',coverColors:['#343e52','#b7a56c'],coverMark:'LEADERSHIP'},
+  {id:'knowledge',title:'Growing in the Knowledge of God',description:'A fictional demonstration title inviting readers to deepen their understanding of scripture and grow in their relationship with God.',category:'Bible Study',status:'Unavailable',coverColors:['#4b4931','#d8c99e'],coverMark:'KNOWLEDGE'}
+];
+const storageKey = 'springs-demo-books-v1';
+const defaultEnquiry = 'https://wa.me/2347067901170?text=Hello%20Springs%20of%20Life%2C%20I%20would%20like%20to%20enquire%20about%20a%20book%20by%20Bishop%20Maji.';
+const bookGrid = document.getElementById('book-grid');
+const adminDialog = document.getElementById('book-admin-dialog');
+const detailDialog = document.getElementById('book-detail-dialog');
+const adminForm = document.getElementById('book-admin-form');
+const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+let books = loadBooks();
+
+function loadBooks(){
+  try{
+    const saved=localStorage.getItem(storageKey);
+    return saved ? JSON.parse(saved) : [...demoBooks];
+  }catch(error){
+    return [...demoBooks];
+  }
+}
+function saveBooks(){
+  try{localStorage.setItem(storageKey,JSON.stringify(books));return true}
+  catch(error){alert('Could not save this demo change in browser storage. Try a smaller cover image.');return false}
+}
+function coverImage(book){
+  if(book.cover)return book.cover;
+  const [base,accent]=book.coverColors||['#23483b','#d5ba68'];
+  const title=esc(book.title).replace(/&#39;/g,'&apos;');
+  const mark=esc(book.coverMark||book.category||'BOOK').toUpperCase();
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="${base}"/><stop offset="1" stop-color="#142d26"/></linearGradient></defs><rect width="600" height="800" fill="url(#g)"/><rect x="30" y="30" width="540" height="740" fill="none" stroke="${accent}" stroke-opacity=".7" stroke-width="2"/><path d="M300 185v120m-60-60h120" stroke="${accent}" stroke-width="2" opacity=".8"/><circle cx="300" cy="245" r="72" fill="none" stroke="${accent}" stroke-width="1" opacity=".6"/><text x="300" y="430" fill="${accent}" text-anchor="middle" font-family="Georgia" font-size="18" letter-spacing="6">${mark}</text><foreignObject x="75" y="465" width="450" height="190"><div xmlns="http://www.w3.org/1999/xhtml" style="font: bold 42px Georgia,serif;line-height:1.13;text-align:center;color:#fff">${title}</div></foreignObject><text x="300" y="715" fill="#fff" text-anchor="middle" font-family="Arial" font-size="18" letter-spacing="4">BISHOP MAJI</text></svg>`;
+  return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+}
+function renderBooks(){
+  const published=books.filter(book=>book.status!=='Draft'&&book.status!=='Unpublished');
+  if(!published.length){bookGrid.innerHTML='<div class="book-empty">There are no published books to display at the moment.</div>';return}
+  bookGrid.innerHTML=published.map(book=>`<article class="book-card"><img class="book-cover" src="${coverImage(book)}" alt="Cover artwork for ${esc(book.title)} by Bishop Maji" loading="lazy"><div class="book-card-body"><div class="book-meta"><span class="book-category">${esc(book.category)}</span><span class="book-status" data-status="${esc(book.status)}">${esc(book.status)}</span></div><h3>${esc(book.title)}</h3><p>${esc(book.description)}</p><div class="book-card-bottom"><span class="book-price">${book.price?esc(book.price):'Enquire for details'}</span><button class="book-details-trigger" type="button" data-book-details="${esc(book.id)}">View Details</button></div></div></article>`).join('');
+}
+function showDetails(bookId){
+  const book=books.find(item=>item.id===bookId);
+  if(!book)return;
+  const enquiry=book.enquiryLink||defaultEnquiry;
+  const detail=document.getElementById('book-detail-content');
+  detail.innerHTML=`<img src="${coverImage(book)}" alt="Cover artwork for ${esc(book.title)} by Bishop Maji"><div class="book-detail-copy"><span class="book-category">${esc(book.category)}</span><h2 id="book-detail-title">${esc(book.title)}</h2><p>${esc(book.description)}</p><p class="book-detail-info">By Bishop Maji<br>${book.publication?esc(book.publication)+'<br>':''}Availability: ${esc(book.status)}${book.price?'<br>Price: '+esc(book.price):''}</p><a class="book-enquiry" href="${esc(enquiry)}" target="_blank" rel="noopener noreferrer">Enquire about this book</a></div>`;
+  detailDialog.showModal();
+}
+function renderAdminList(){
+  const list=document.getElementById('admin-book-list');
+  if(!books.length){list.innerHTML='<p class="admin-note">No books yet. Add one using the form.</p>';return}
+  list.innerHTML=books.map(book=>`<div class="admin-book-row"><div><strong>${esc(book.title)}</strong><small>${esc(book.status)} · ${esc(book.category)}</small></div><div class="admin-actions"><button type="button" data-edit-book="${esc(book.id)}">Edit</button><button type="button" data-toggle-book="${esc(book.id)}">${book.status==='Draft'?'Publish':book.status==='Unpublished'?'Publish':'Unpublish'}</button><button type="button" class="delete-book" data-delete-book="${esc(book.id)}">Delete</button></div></div>`).join('');
+}
+function resetAdminForm(){adminForm.reset();adminForm.elements.bookId.value='';document.getElementById('book-form-heading').textContent='Add a book';document.getElementById('cancel-book-edit').hidden=true}
+function editBook(bookId){
+  const book=books.find(item=>item.id===bookId);if(!book)return;
+  adminForm.elements.bookId.value=book.id;adminForm.elements.title.value=book.title;adminForm.elements.description.value=book.description;adminForm.elements.category.value=book.category;adminForm.elements.price.value=book.price||'';adminForm.elements.publication.value=book.publication||'';adminForm.elements.status.value=book.status;adminForm.elements.enquiryLink.value=book.enquiryLink||'';document.getElementById('book-form-heading').textContent='Edit book';document.getElementById('cancel-book-edit').hidden=false;
+}
+bookGrid.addEventListener('click',event=>{const button=event.target.closest('[data-book-details]');if(button)showDetails(button.dataset.bookDetails)});
+document.getElementById('open-book-admin').addEventListener('click',()=>{renderAdminList();adminDialog.showModal()});
+document.querySelectorAll('[data-close-dialog]').forEach(button=>button.addEventListener('click',()=>button.closest('dialog').close()));
+document.querySelectorAll('dialog.book-dialog').forEach(dialog=>dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()}));
+document.getElementById('admin-book-list').addEventListener('click',event=>{
+  const edit=event.target.closest('[data-edit-book]');const toggle=event.target.closest('[data-toggle-book]');const remove=event.target.closest('[data-delete-book]');
+  if(edit)editBook(edit.dataset.editBook);
+  if(toggle){const book=books.find(item=>item.id===toggle.dataset.toggleBook);if(book){book.status=book.status==='Draft'||book.status==='Unpublished'?'Available':'Unpublished';if(saveBooks()){renderAdminList();renderBooks()}}}
+  if(remove&&confirm('Delete this demo book from this browser?')){books=books.filter(item=>item.id!==remove.dataset.deleteBook);if(saveBooks()){renderAdminList();renderBooks();resetAdminForm()}}
+});
+document.getElementById('cancel-book-edit').addEventListener('click',resetAdminForm);
+adminForm.addEventListener('submit',async event=>{
+  event.preventDefault();
+  const data=new FormData(adminForm);const id=data.get('bookId');const existing=books.find(item=>item.id===id);
+  const enquiryLink=String(data.get('enquiryLink')||'').trim();
+  if(enquiryLink&&!/^https?:\/\//i.test(enquiryLink)){adminForm.elements.enquiryLink.setCustomValidity('Enter a secure HTTPS or HTTP link.');adminForm.reportValidity();return}
+  adminForm.elements.enquiryLink.setCustomValidity('');
+  const book={...(existing||{}),id:id||`book-${Date.now()}`,title:String(data.get('title')).trim(),description:String(data.get('description')).trim(),category:data.get('category'),price:String(data.get('price')||'').trim(),publication:String(data.get('publication')||'').trim(),status:data.get('status'),enquiryLink};
+  const file=adminForm.elements.cover.files[0];
+  if(file){if(file.size>1024*1024){alert('Please choose a cover image smaller than 1 MB for this browser demo.');return}book.cover=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=reject;reader.readAsDataURL(file)})}
+  if(existing)books=books.map(item=>item.id===id?book:item);else books.push(book);
+  if(saveBooks()){renderAdminList();renderBooks();resetAdminForm()}
+});
+adminForm.elements.enquiryLink.addEventListener('input',()=>adminForm.elements.enquiryLink.setCustomValidity(''));
+document.querySelector('#visit form').addEventListener('submit',()=>{
   setTimeout(()=>alert('Thank you! Your prayer request has been sent to Springs of Life.'),300)
-})
+});
+renderBooks();
 </script>
 </body>
 </html>
